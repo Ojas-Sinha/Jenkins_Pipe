@@ -1,14 +1,14 @@
 pipeline {
     agent any
-
     stages {
-        stage('Add') {
+        stage('Sum') {
             steps {
                 script {
-                  def a = 10
-                  def b = 20
-                  def sum = a + b
-                  echo "Sum of 10 and 20 is : ${sum}
+                    def a = 10
+                    def b = 25
+                    def sum = a + b
+                    echo "The sum of ${a} and ${b} is: ${sum}"
+                }
             }
         }
     }
